@@ -4,6 +4,7 @@ import TodoModal from "./components/Modal";
 import TodoItem from "./components/TodoItem";
 import { Input } from "reactstrap";
 import { v4 as uuidv4 } from "uuid";
+import SearchBox from "./components/SearchBox";
 
 export default function App() {
   const [todos, setTodos] = useState([
@@ -23,14 +24,14 @@ export default function App() {
         <hr></hr>
         <div className="row">
           <div className="col-sm-12 col-lg-6 mb-5">
-            <Input type="text" placeholder="Search todo" />
+            <SearchBox />
           </div>
           <div className="col-sm-12 col-lg-6">
             {todos.map((todo) => (
               <TodoItem key={todo.id} todo={todo} />
             ))}
-            <TodoModal />
           </div>
+          <TodoModal />
         </div>
       </div>
     </div>
