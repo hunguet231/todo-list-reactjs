@@ -1,0 +1,28 @@
+.App {
+    height: auto;
+    min-height: 300px;
+    margin-top: 100px;
+    box-shadow: 0 0 5px rgb(170, 170, 170);
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+.todo-item {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid rgb(214, 214, 214);
+    border-left: 3px solid rgb(9, 126, 223);
+    box-shadow: 0 3px 7px 0 rgba(110, 142, 247, 0.13);
+    border-radius: 3px;
+}
+
+.todo-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.todo-date {
+    color: rgb(144, 144, 144);
+    font-weight: 500;
+}
